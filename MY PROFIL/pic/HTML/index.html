@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updulla Alpha | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleMenu() {
+            let navLinks = document.querySelector(".nav-links");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: #2c3e50;
+            color: white;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #e74c3c;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e74c3c;
+        }
+
+        .hire-btn {
+            padding: 10px 20px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .hire-btn:hover {
+            background: #c0392b;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 10%;
+            background: #ecf0f1;
+        }
+
+        .text-content {
+            max-width: 50%;
+        }
+
+        .text-content h1 {
+            font-size: 50px;
+        }
+
+        .text-content h1 span {
+            color: #e74c3c;
+        }
+
+        .text-content h2 {
+            font-size: 24px;
+            color: #2c3e50;
+        }
+
+        .text-content p {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .black-btn, .orange-btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: 0.3s;
+        }
+
+        .black-btn {
+            background: #2c3e50;
+            color: white;
+        }
+
+        .black-btn:hover {
+            background: #34495e;
+        }
+
+        .orange-btn {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .orange-btn:hover {
+            background: #c0392b;
+        }
+
+        .image-content img {
+            width: 320px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media screen and (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .text-content {
+                max-width: 100%;
+            }
+            .image-content img {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><span>Updulla</span> Alpha</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="hire-btn">Hire Me</button>
+    </header>
+
+    <section class="hero">
+        <div class="text-content">
+            <h1>I'm <span>Updulla Alpha</span></h1>
+            <h2>Front-End Developer</h2>
+            <p>
+                Currently pursuing a BS in Software Engineering, I am building a strong foundation in programming, software development, and system design. My studies focus on creating efficient, scalable, and secure applications while understanding software architecture, databases, and modern technologies. With a background in Pre-Engineering, I bring logical problem-solving skills to my work. My goal is to become a skilled Full Stack Web Developer, integrating technical expertise to create impactful digital solutions.
+            </p>
+            <div class="buttons">
+                <button class="black-btn">Hire Me</button>
+                <button class="orange-btn">Experience</button>
+            </div>
+        </div>
+        <div class="image-content">
+            <img src="/pic/sawir son.jpg" alt="Updulla Alpha">
+        </div>
+    </section>
+</body>
+</html>
